@@ -1,3 +1,6 @@
+html, body {
+    height: 100%;
+}
 body {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
@@ -19,13 +22,14 @@ h2 {
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
-    /* margin: 0; */
     margin-top: 107px;
     margin-bottom: 57px;
 }
 .wrapper {
     max-width: 1110px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .wrapper-gray {
     background-color: #F7F7F7;
@@ -33,10 +37,18 @@ h2 {
 .bg {
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
-    padding: 191px 0 302px;
     background-position: center;
     background-size: cover;
     text-align: center;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+.title {
+    position: absolute;
+    top: calc(50% - 124px - 75px);
+    left: 0;
+    right: 0;
 }
 .stat {
     text-align: center;
@@ -261,4 +273,169 @@ h2 {
 .box-footer a {
     color: #F7654A;
     text-decoration: none;
+}
+
+@media(max-width: 920px) {
+    h1 {
+        font-size: 45px;
+        max-width: 600px;
+    }
+    h2 {
+        font-size: 25px;
+        margin-top: 62px;
+        margin-bottom: 33px;
+    }
+    .wrapper {
+        max-width: 600px;
+    }
+    .title {
+        top: calc(50% - 79px - 75px);
+    }
+    .stat {
+        max-width: 500px;
+        margin: -106px auto 0;
+        padding-top: 41px;
+    }
+    .stat-item h2 {
+        font-size: 50px;
+        margin-bottom: 14px;
+    }
+    .stat-item h3 {
+        font-size: 20px;
+    }
+    .contact {
+        margin-top: 43px;
+        margin-bottom: 75px;
+    }
+    .box-contact h3 {
+        font-size: 35px;
+    }
+    .box-contact p {
+        font-size: 16px;
+    }
+    .grid {
+        grid-gap: 13px;
+        margin-top: 41px;
+    }
+    .grid-item h3{
+        font-size: 16px;
+    }
+    .grid-photo {
+        margin-top: 64px;
+        margin-bottom: 0;
+    }
+    .box-feedback {
+        flex-wrap: wrap;
+    }
+    .box-feedback>div {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .name {
+        margin-bottom: 0;
+    }
+    .footer-contact {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .footer-contact>div {
+        flex-basis: 49%;
+        max-width: 49%;
+    }
+    .footer-contact h3 {
+        font-size: 20px;
+    }
+    .footer-contact-info {
+        font-size: 19px;
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 640px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 30px;
+        max-width: 400px;
+    }
+    .bg {
+        height: 25%;
+        position: inherit;
+        padding: 50px 0 150px;
+    }
+    .title {
+        position: inherit;
+        top: inherit;
+        left: inherit;
+        right: inherit;
+    }
+    .stat, .box-party, .box-footer {
+        flex-wrap: wrap;
+    }
+    .stat-item h2 {
+        font-size: 35px;
+    }
+    .stat-item h3 {
+        font-size: 16px;
+    }
+    .stat-item {
+        flex-basis: 49%;
+        max-width: 49%;
+    }
+    .box-party > div {
+        flex-basis: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .box-party img {
+        max-width: 200px;
+    }
+    .box-party h3::before {
+        right: 0;
+        margin: 0 auto;
+    }
+    .box-party h3 {
+        margin-bottom: 32px;
+        padding-top: 25px;
+    }
+    .grid {
+        grid-template-areas: "a b" "c d" "e f";
+    }
+    .grid-photo {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-contact img {
+        max-width: 20px;
+        width: 100%;
+    }
+    .footer-contact h3, .box-contact p, .footer-contact-info, .box-footer {
+        font-size: 14px;
+    }
+    .box-contact h3 {
+        font-size: 26px;
+    }
+    .contact {
+        padding: 26px 0;
+        margin-bottom: 50px;
+    }
+    .box-footer>div {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .box-footer {
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+@media(max-width: 500px) {
+    .box-contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    .box-contact p {
+        margin-bottom: 18px;
+    }
+    .grid {
+        grid-template-areas: "a" "b" "c" "d" "e" "f";
+    }
 }
