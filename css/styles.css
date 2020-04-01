@@ -30,11 +30,12 @@ p {
 a {
   color: #8289ba;
   list-style-type: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
   color: #fff;
+  text-decoration: underline;
 }
 
 ol {
