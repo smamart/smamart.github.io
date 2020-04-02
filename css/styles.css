@@ -21,8 +21,19 @@ h2 {
   font-size: 20px;
   margin-bottom: 10px;
   margin-left: 20px;
+  margin-top: 50px;
 }
-
+h3 {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 20px;
+  text-transform: lowercase;
+  font-family: 'Pathway Gothic One', sans-serif;
+  letter-spacing: 2.5px;
+}
 p {
   color: #424874;
 }
@@ -40,8 +51,27 @@ a:hover {
 
 ol {
   color: #8289ba;
+  margin-left: 10px;
+  border: 1px solid #fff;
+  border-bottom: none;
+  border-right: none;
+  border-top-left-radius: 15px;
+  padding-top: 10px;
+  margin-top: 3px;
+  padding-left: 50px;
 }
-
+.content>ul {
+  color: #8289ba;
+  margin-left: 10px;
+  border: 1px solid #fff;
+  border-bottom: none;
+  border-right: none;
+  border-top-left-radius: 15px;
+  padding-top: 10px;
+  margin-top: 3px;
+  padding-left: 27px;
+  list-style: none;
+}
 .wrapper {
   width: 100%;
   max-width: 1000px;
@@ -151,6 +181,7 @@ ol {
 
 .footer {
   text-align: left;
+  background-color: #fff;
 }
 
 .project-box-link {
@@ -164,8 +195,12 @@ ol {
   justify-content: flex-start;
   align-items: center;
 }
-
-.copyright {
+.footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+.footer p {
   color: #8289ba;
   margin-left: 20px;
 }
